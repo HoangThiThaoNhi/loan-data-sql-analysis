@@ -55,14 +55,67 @@ Mục tiêu của dự án này là phân tích dữ liệu vay vốn để tìm
 
 ## 🗂️ Cấu trúc thư mục
 
-loan-default-sql-project/
-│
-├── README.md # Tổng quan dự án
-├── data/ # Chứa dataset gốc và file đã xử lý
-│ └── README.md
-├── notebooks/ # Ghi chú, phân tích, xử lý dữ liệu
-│ └── README.md
-└── sql/ # Câu lệnh SQL truy vấn
-└── README.md
+#### 1. README.md
+Tổng quan dự án:
 
-# loan-data-sql-analysis
+Mục tiêu phân tích
+
+Giới thiệu dataset
+
+Cách chạy file SQL
+
+#### 2. data/
+Dữ liệu sử dụng trong dự án:
+
+loan_data.csv: Dữ liệu gốc từ Kaggle
+
+loan_data_cleaned.csv: Dữ liệu sau xử lý (nếu có)
+
+README.md: Mô tả các cột, format dữ liệu
+
+#### 3. notebooks/
+Ghi chú, kế hoạch thực hiện:
+
+project_plan.md: Các bước thực hiện dự án
+
+data_exploration.md: Ghi chú quá trình khám phá dữ liệu
+
+README.md: Mô tả mục tiêu thư mục
+
+#### 4. sql/
+Các câu truy vấn SQL chia theo module:
+
+0_raw_data/: Kiểm tra cấu trúc bảng, schema
+
+1_data_cleaning/: Xử lý thiếu dữ liệu, kiểm tra định dạng
+
+2_analysis/:
+
+1_overview.sql: Tổng quan khách hàng và tỷ lệ vỡ nợ
+
+2_demographics.sql: Phân tích nhân khẩu học
+
+3_income_financial.sql: Phân tích thu nhập, tài chính
+
+4_loan_characteristics.sql: Phân tích đặc điểm khoản vay
+
+5_credit_history.sql: Lịch sử tín dụng, chậm trả
+
+6_risk_segmentation.sql: Phân nhóm khách hàng theo rủi ro
+
+3_insights_summary.sql: Tổng hợp insight chính
+
+#### 5. output/ (tuỳ chọn)
+Kết quả xuất ra từ phân tích:
+
+dashboard_screenshots/: Hình chụp dashboard nếu có
+
+charts/: Biểu đồ phân tích từ Excel hoặc Python
+
+
+## 📌 Dataset
+
+- Dataset gốc từ: **Kaggle - Loan Default Prediction**
+- Gồm các cột: `Income`, `LoanAmount`, `CreditScore`, `Age`, `EmploymentType`, `LoanPurpose`, `Default`, v.v.
+
+
