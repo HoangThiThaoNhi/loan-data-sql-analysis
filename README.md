@@ -46,6 +46,31 @@ Mục tiêu của dự án này là phân tích dữ liệu vay vốn để tìm
 - Viết báo cáo tổng hợp giúp hỗ trợ ra quyết định kinh doanh.
 - Đưa toàn bộ project lên GitHub như một sản phẩm phân tích dữ liệu thực tế.
 
+## 📊 Insights từ phân tích dữ liệu
+
+Dựa trên việc khám phá dữ liệu và truy vấn SQL, nhóm đã rút ra được các insight quan trọng giúp ngân hàng xác định và quản lý rủi ro tín dụng hiệu quả hơn:
+
+### 1. Điểm tín dụng thấp là yếu tố rủi ro lớn
+- Nhóm khách hàng có điểm tín dụng dưới **600** có tỷ lệ vỡ nợ cao nhất.
+- Tỷ lệ vỡ nợ **giảm dần** khi điểm tín dụng **tăng lên**.
+
+### 2. Tỷ lệ nợ trên thu nhập (DTI Ratio) càng cao, nguy cơ vỡ nợ càng lớn
+- Khách hàng có **DTI Ratio > 40%** có nguy cơ vỡ nợ **gấp đôi** nhóm dưới 20%.
+
+### 3. Thời hạn vay dài làm tăng rủi ro vỡ nợ
+- Các khoản vay dài hạn (**> 36 tháng**) có tỷ lệ vỡ nợ **cao hơn** so với vay ngắn hạn hoặc trung hạn.
+
+### 4. Khoản vay càng lớn, rủi ro càng cao
+- Nhóm vay từ **20.000 USD trở lên** có tỷ lệ vỡ nợ cao nhất trong các phân khúc khoản vay.
+
+### 5. Thiếu người đồng vay (co-signer) dẫn đến tỷ lệ vỡ nợ cao hơn
+- Khách hàng vay mà **không có người đồng vay** có xu hướng vỡ nợ **cao hơn đáng kể**.
+
+### 6. Tình trạng hôn nhân ảnh hưởng đến khả năng trả nợ
+- **Người đã ly hôn** có tỷ lệ vỡ nợ **cao hơn** so với người **độc thân** hoặc **đã kết hôn**.
+
+
+
 ## 🛠️ Công cụ sử dụng
 
 - **SQL**: để phân tích dữ liệu
